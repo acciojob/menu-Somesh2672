@@ -28,10 +28,11 @@ const All = () => {
     <div>
       <div className="Navbar">
         <h1>Our Menu</h1>
-        <button id="main" onClick={() => handleButtonClick("All")}>All</button>
-        <button id="filter-btn-1" onClick={() => handleButtonClick("breakfast")}>Breakfast</button>
-        <button id="filter-btn-2" onClick={() => handleButtonClick("lunch")}>Lunch</button>
-        <button id="filter-btn-3" onClick={() => handleButtonClick("shakes")}>Shakes</button>
+        <button data-test-id="main" onClick={() => handleButtonClick("All")}>All</button>
+        <button data-test-id="filter-btn-1" onClick={() => handleButtonClick("breakfast")}>Breakfast</button>
+        <button data-test-id="filter-btn-2" onClick={() => handleButtonClick("lunch")}>Lunch</button>
+        <button data-test-id="filter-btn-3" onClick={() => handleButtonClick("shakes")}>Shakes</button>
+
       </div>
 
       <div className="Dishes">{renderDishes()}</div>
